@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variable Scope</title>
+    
+</head>
+<style type = "text/css">
+    .thumb{
+        width: 50px;
+        height: 50px;
+    }
+    .thumbbig{
+        position:absolute;
+        width:0px;
+        -webkit-transition:width 0.3s linear 0s;
+        transition:width 0.3s linear 0s; 
+        z-index:10;
+    }
+    .thumb:hover + .thumbbig{
+        width:800px;
+        height: 500px;
+        top: 50%;
+        margin-top: -5%;
+        left: 230px;
+
+
+    }
+    </style>
+<body>
+    <h1>
+        Variable Scope
+    </h1>
+        <ul>
+            <li>
+                There are two types of variable scopes.
+                1. Globle Scope 2. Local Scope
+            </li>
+            <li>
+               1. A variable declared outside the function is a global variable
+                and its value is accessible and modifiable throught the program.
+                In a web browser, global variables are deleted when you close the 
+                browser window(or tab), but remain available to new pages loaded
+                into the same window.
+            </li>
+            <li>
+                2. A variable declared inside the function is a local 
+                variable. It is created and destroyed every time
+                the function is executed, and it cannot be by any code 
+                outside the function. Inside a function, if a variable 
+                has not been declared with var it is created as a
+                global variable. 
+            </li>
+            <li>
+              <font color = "#0033ff">  3. Function arguments(parameters)work as local variable inside the function.</font>
+            </li>
+        </ul>
+    
+    <script src = "variable_1_scope.js">
+    </script>
+    <font size = "4" face = "arial" type = Italics color = "#33CC33"><i>Error when local varible is tried to access from outside the function.</i></font>
+    <br>
+    <a href = "images/Reference error.jpg">
+        <img class = "thumb" src = "images/Reference error.jpg" alt = "ref_error">
+        <img class = "thumbbig" src = "images/Reference error.jpg" alt = "ref_error">
+    </a>
+</body>
+</html>

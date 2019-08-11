@@ -1,0 +1,133 @@
+    .center {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%; 
+        margin-left: -150px;
+        margin-top: -150px;
+     }
+     .middle{
+         text-align: center;
+     }
+    h1,h2{
+        text-decoration:underline;
+        font-family: Arial;
+        color:green;
+        font-size:
+        font-style:
+        font-weight:
+        text-align:
+        word-spacing:
+        vertical align:
+        text-indent:
+        }
+    li,p{
+        font-family: Gungsuh;
+        color: blue;
+        text-align:justify;
+        font-size:
+        font-style:
+        font-weight:
+        text-align:
+        word-spacing:
+        vertical align:
+        text-indent:
+        }
+        ul>li{
+        font-family: Lucida Calligraphy;
+        color:blueviolet;
+        text-align:justify;
+        font-weight:bold;
+        font-size: 1.2em;
+        font-style:
+        
+        text-align:
+        word-spacing:
+        vertical align:
+        text-indent:
+        }
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+        float: left;
+        width: 32%;
+        padding: 5px;
+        }
+
+/* Clear floats after image containers */
+.row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+/* for image
+html code:
+<a href = "rest_argu.jpg">
+  <img class = "thumb" src = "rest_argu.jpg" alt = "res_argu">
+  <img class = "thumbbig" src = "rest_argu.jpg" alt = "res_argu">
+</a>
+*/
+/*type = "text/css"*/
+    /*.thumb{
+        width: 50px;
+        height: 50px;
+    }
+    .thumbbig{
+        position:absolute;
+        width:0px;
+        -webkit-transition:width 0.3s linear 0s;
+        transition:width 0.3s linear 0s; 
+        z-index:10;
+    }
+    .thumb:hover + .thumbbig{
+        width:800px;
+        height: 500px;
+        top: 50%;
+        margin-top: -5%;
+        left: 230px;
+
+
+    }*/
+    img {
+        border: 1px solid green;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+      }
+      
+    img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+      }
+    /*.example 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }*/
+  
+    video /*placing the video in the center of the page*/
+    {
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+        width: 500px;
+        border: solid green; 
+    }
+    .maroon
+    {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color:maroon;
+        text-align:justify;
+        font-size: 1.2em;
+        font-style:
+        word-spacing:
+        vertical align:
+        text-indent:
+    }
+    textarea{
+        font-size: 1.5em;
+        display: block;/* for center alignment*/
+        margin-left: auto;/* for center alignment*/
+        margin-right: auto;/* for center alignment*/
+        
+    }

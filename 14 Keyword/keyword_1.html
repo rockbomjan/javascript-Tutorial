@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyword</title>
+    <style type = "text/css">
+        .thumb{
+            width: 50px;
+            height: 50px;
+        }
+        .thumbbig{
+            position:absolute;
+            width:0px;
+            -webkit-transition:width 0.3s linear 0s;
+            transition:width 0.3s linear 0s; 
+            z-index:10;
+        }
+        .thumb:hover + .thumbbig{
+            width:600px;
+            height: 400px;
+            top: 40%;
+            margin-top: -5%;
+           left: 230px;
+        }
+        </style>
+</head>
+<body>
+    <h1>Keyword: var let const.</h1>
+    <ul>
+        <li>
+            Var: The scope of variable declared with var is its current
+            execution context, which is either the enclosing function or, 
+            for variables declared outside any function, global. A variable
+            formed with var is attached with the window object. They become
+            the properties of window object.
+        </li>
+        <li>
+            let: let allows you to declare variables that are limited in scope
+            to the block, statement, or expression on which it is used. It becomes
+            useless outside the block.
+        </li>
+        <li>
+            const: This declaration creates a constant whose scope can be either global
+            or local to the block in which it is declared. Global constants do not become
+            properties of the window object, unlike var variables. An initializer for a
+            constant is required: that is, you must specify its value in the same statement
+            in which it's delcared which can't be changed later. eg: value of pi = 22/7
+            which cannot be changed.
+        </li>
+    </ul>
+    <script src = "keyord_1.js">
+    </script>
+    The property method of window is displayed in the picture below. var a becomes the 
+    property of the window object. But you cannot see b or c.<br>
+    A good practice is to create a variable with let or const keyword.<br>
+    <a href = "window object.jpg">
+            <img class = "thumb" src = "window object.jpg" alt = "win_obj">
+            <img class = "thumbbig" src = "window object.jpg" alt = "win_obj">
+          </a>
+          <br>
+    <script src = "keyord_2.js">
+    </script>
+    
+</body>
+</html>

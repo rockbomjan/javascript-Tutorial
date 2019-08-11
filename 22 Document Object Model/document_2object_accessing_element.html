@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accessing DOM Element</title>
+    <link rel = "stylesheet" href = "css_file.css"/>
+    
+</head>
+<body>
+    <h1>Accessing DOM Element</h1>
+    <ol>
+    <li id = "demo">Accessing element 1 using id. The value of id must be unique.</li>
+    <li class = "cls">Accessing element 2 using class. The value of class 
+        could be the same. But in order to access them we need to use index no, too.</li>
+    <li>Accessing Elements using TagName 'li' paragraph.</li>
+</ol><br>
+
+<textarea rows = "10" cols = "70" readonly>
+        var a = document.getElementById("demo").innerHTML;
+        //We get access to text with Id through .innerHTML
+        document.write("1 "+ a+"<br>");
+        
+        //We need to pass an index number in order to access elements with class name.
+        var b = document.getElementsByClassName("cls")[0].innerHTML;
+        document.write("2 "+b+"<br>");
+        
+        //Accessing elements using TagName "li" for paragraph
+        var c = document.getElementsByTagName("li");
+        document.write(c+"<br>");
+        console.log(c);
+
+</textarea>
+<p>4. The .querrySelector passes the first element. And this the first paragraph</p>
+<p>5. The .querrySelector passes the first element. And this the second paragraph</p>
+<p>6. The .querrySelector passes the first element. And this the third paragraph</p>
+<div class = "blink"><span class = "text1">Javascript runs here:</span></div>
+
+<script src = "document_2object_accessing_element.js"></script>
+
+<div class="click-to-top">
+    <img  src = "images/accessing_elements.jpg" alt = "image 1"/> <span>Accessing
+        elements using TagName.
+    </span>
+</div>
+</body>
+</html>

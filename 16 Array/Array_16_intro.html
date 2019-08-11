@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Introduction</title>
+    <link rel = "stylesheet" href = "css_file.css"/>
+</head>
+<body>
+    <h1>Array Introduction</h1>
+    <img src = "images/Array1.jpg"/>
+    <textarea rows = "14" cols = "100" readonly>
+    var friends = ['Saroj','Shova','Shanti','Shyam'];
+        //function array_sort(){
+            document.write("Length of an array is "+ friends.length+".<br>")
+            for (i = 0; i< friends.length; i++)
+            document.write(friends[i]+" (using for loop) <br>");
+            document.write("It's a list friends: "+friends + " (not using a loop or index no)<br>")
+        //}
+        //Here the function keyword is commented out
+        
+        //Creating a new array with the same name.
+    var friends = new Array("Rock", "Rose", "Romeo", "Juliet");
+            document.write("It's a list friends with new arrray: ["+friends + "] <br>")
+        //The other way:
+        friends = friends[0];
+        friends[0] = "Krishna";
+        //It's a long method.        
+    </textarea>
+    <p><script src = "Array_16_a_intro.js"></script></p>
+    <!--<button type = "button" onclick = "array_sort();">Find</button>-->
+    <h1>Array Properties and Methods</h1>
+    <img src = "images/Array2.jpg"/>
+    
+    <textarea rows = "10" cols = "100" readonly>
+    var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Neptune", 
+    "Uranus", "Pluto"]
+    var len = planets.length;
+    document.write("Length of the array 'planets': "+ len);
+    //Array starts with index no. 0.
+    //Lenght starts with no. 1.
+    </textarea>
+    <div class = "blink"><span>Javascripts Runs Here:</span>
+    </div>
+    <p><script src = "Array_16_b_intro.js"></script></p>
+</body>
+</html>

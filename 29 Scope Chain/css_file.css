@@ -1,0 +1,119 @@
+/* Simple Calculater */
+#clear{
+    width: 130px;
+}
+
+.form_style{
+    width: 135px;
+    height: 255px;
+    margin: auto;
+    border: solid 2px pink;
+    background-color: coral;
+    
+
+
+}
+
+input{
+    width: 40px;
+    background-color: green;
+    
+        
+}
+
+#answerstyle{
+    width: 130px;
+    background-color: pink;
+    height: 30px;
+    font-size: 1em;
+}
+#demo{
+    font-size: 0.6em;
+    text-align: center;
+}
+
+
+
+
+/* Full Form of CSS:Cascading Style Sheets*/
+p, legend, body,form
+{
+    color: palegoldenrod;
+
+}
+
+body
+{
+background-color:#00aced;
+font-size: 1.5em;/*
+“Ems” (em): The “em” is a scalable unit that is used in web 
+document media. An em is equal to the current font-size, for 
+instance, if the font-size of the document is 12pt, 1em is 
+equal to 12pt.*/
+}
+img
+{
+    border: solid green;
+    border-width: 1em;
+    margin-left: 30px;
+    width: 25em;
+    height: auto;
+}
+textarea{
+    font-size: 1em;
+    display: block;/* for center alignment*/
+    margin-left: auto;/* for center alignment*/
+    margin-right: auto;/* for center alignment*/
+    border: solid green;
+    text-align: justify;
+    
+/* }
+iframe{
+    float: left;
+} */
+
+/* href stands for Hypertext Reference*/
+.thumb{
+    width: 50px;
+    height: 50px;
+}
+.thumbbig{
+    position:absolute;
+    width:0px;
+    -webkit-transition:width 0.3s linear 0s;
+    transition:width 0.3s linear 0s; 
+    z-index:10;
+}
+.thumb:hover + .thumbbig{
+    width:800px;
+    height: 500px;
+    top: 50%;
+    margin-top: -5%;
+    left: 230px;
+
+
+}
+h1,h1{
+    color: pink;
+    font-size: 30pt;
+    text-shadow: 5px 2px 4px green;
+}
+.blink{
+    width:400px;
+    height: 50px;
+    /*background-color:green;*/
+    padding: 15px;	
+    text-align: left;
+    line-height: 50px;
+}
+span{
+    font-size: 25px;
+    font-family: cursive;
+    color:pink;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}

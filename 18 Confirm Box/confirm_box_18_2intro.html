@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Confirm Box</title>
+    <link rel = "stylesheet" href = "css_file.css"/>
+</head>
+
+<body>
+        <h1>Confirm Box</h1>
+        <img src = "images/confirm_box1.jpg"/>
+        <script>
+        function myfun(){
+            var user_confirmation = confirm("Would like to visit my website?");
+            if(user_confirmation == true){
+                window.open("https://www.facebook.com/");
+                return true;
+            }
+            else{
+                document.write("The user doesn't want to visit my site.");
+                return false;
+            }
+        }
+        </script>
+    <input type = "button" name = "" onclick = "javascript:myfun();" value = "ClickMe!!"/>
+</body>
+</html>

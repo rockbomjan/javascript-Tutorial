@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events in JavaScript</title>
+    <link rel = "stylesheet" href = "css_file.css">
+    <!-- twitter = #00aced
+    fb = #3b5999
+    whatsapp = #25D366
+    youtube = #cd201f -->
+</head>
+<body>
+    <h1>Events in JavaScript</h1>
+    <img src = "images/events1.jpg"><br>
+    <p>Mouse Events</p>
+    <input type="button" value="Refresh" onClick="document.location.reload(true)">
+    <button onmouseover="myfacebook()">OnMouseOver</button>
+    <button onmouseup="mytwitter()">OnMouseUp</button><!--onmouseup
+    means press the left mouse button and release-->
+    <button onmousedown="myyoutube()">OnMouseDown</button>
+    <button onmouseout="mywhatsapp()">OnMouseOut</button>
+
+    <p>This an onclick event 1: Hi!! What's up!!</p>
+    <button onclick="myfacebook()">Event1</button>
+    <p>This an onclick event 2: Hi!! What's up!!</p>
+    <button onclick="mytwitter()">Event2</button>
+    <p>This an onclick event 3: Hi!! What's up!!</p>
+    <button onclick="mywhatsapp()">Event3</button>
+    <p>This an onclick event 4: Hi!! What's up!!</p>
+    <button onclick="myyoutube()">Event4</button>
+    <br>
+    <p>Key Events</p>
+    <button onkeypress="myfacebook()">OnKeyPress</button>
+    <button onkeyup="mytwitter()">OnKeyUp</button><!--onmouseup
+    means press the left mouse button and release-->
+    <button onkeydown="myyoutube()">OnKeyDown</button>
+    <!-- <input type = 'text' size = '50' onkeydown = 'keyCode(event)'> -->
+    <br>
+    <input type="text" onkeypress="uniCharCode(event)" onkeydown="uniKeyCode(event)"> 
+    <p>onkeypress - <span id="demo1"></span></p>
+    <p>onkeydown - <span id="demo2"></span></p>
+
+    <script src = "events_1_intro.js"></script>
+</body>
+</html>

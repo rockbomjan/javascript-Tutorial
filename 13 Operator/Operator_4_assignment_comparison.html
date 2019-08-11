@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operators: Assignment and Comparison</title>
+    <link rel = "stylesheet" href = "css_variable.css"/>
+</head>
+<body>
+    <h1>Operators: Assignment and Comparison</h1>
+    <img src = "images/Operators2.jpg"/>
+    <P> Comparison Operator</P>
+    <textarea rows = "10" cols = "90" readonly>
+        //== is equal to
+        //=== is identical
+        var a = 10;//Numerical data type
+        var b = "10";//String data type
+        document.write(a+" is the value of b and is a number.<br>");
+        document.write(b +" is the value of b and is a string.<br>")
+
+        if(a==b)
+        {
+            document.write("Both are equal.");
+        }
+        else
+        {
+            document.write("Both are not equal");   
+        }
+        //The output will be same: 
+        //10 is the value of a and is a number.
+        //10 is the value of b and is a string.
+        //Both are equal. Because '==' was checking only the values.
+
+        if(a===b)
+        {
+            document.write("Both are equal.");
+        }
+        else
+        {
+            document.write("Both are not equal");
+        }
+        //The output will be same: 
+        //Both are not equal. Because '===' was checkingnot only the values but also
+        //the datatype.
+        
+    </textarea><br>
+    <P> Comparison Operator</P>
+    <textarea rows = "10" cols = "90" readonly>
+        //!= is not equal to
+        //!== is not identical
+        var c = 11;//Numerical data type
+        var d = 11;//String data type
+        document.write(c+" is the value of c and is a number.<br>");
+        document.write(d +" is the value of d and is a number.<br>")
+        if(c != d)
+        {
+            document.write("Both are not equal.<br>");
+        }
+        else
+        {
+            document.write("Both are equal.<br>");
+        }
+
+        var c = 12;
+        var d = "12";
+        document.write(c+" is the value of c and is a number.<br>");
+        document.write(d +" is the value of d and is a string.<br>")
+
+        if(c!==d)
+        {
+            document.write("Both are not equal.<br>");
+        }
+        else
+        {
+            document.write("Both are equal.<br>");
+        }
+        //The output is:
+        /*
+        11 is the value of c and is a number.
+        11 is the value of d and is a number.
+        Both are equal.
+        12 is the value of c and is a number.
+        12 is the value of d and is a string.
+        Both are not equal.
+        */
+    </textarea><br>
+    <P> Assignment Operator</P><br>
+    <textarea rows = "10" cols = "90" readonly>
+        //Assignment Operator
+        var x = 11;//Numerical data type
+        var y = 22;//Numerical data type
+        var z = 30;//Numerical data type
+        var sum = x + y;
+        var z = z + sum;
+        document.write(x+" is the value of x and is a number.<br>");
+        document.write(y +" is the value of y and is a number.<br>")
+        document.write("The sum is "+ sum+"<br>");
+        document.write("The value of z is: "+z+"<br>");
+    </textarea>
+    <h2>JavaScript Runs here:</h2>
+    <p>
+            Comparison Operator<br>
+        <script src = "Operator_4_1assignment_comparison.js"></script><br>
+        <script src = "Operator_4_2assignment_comparison.js"></script><br>
+            Assignment Operator <br>
+        <script src = "Operator_4_3assignment_comparison.js"></script>
+    </p>
+</body>
+</html>

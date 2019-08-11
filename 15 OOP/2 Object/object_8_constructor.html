@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object: Constructor</title>
+</head>
+<body><font face = "arial" size = 4>
+    <h1><b>Object: Constructor</b></h1>
+    <ol>
+        <li>
+            Object instances are created with constructor, which are basically 
+            special function that prepare new instance of an object for use.<br>
+            Exampale:<br>
+            function Mobile() {<br>
+                this.Model = '3310'//this keyword points the new object instance
+                samsung<br>
+                //It means that the new object from this is pointed by the 'this'
+                keyword.<br>
+                this.price = function(){<br>
+                    document.write(this.model + "Price Rs 3000");<br>
+                };<br>
+            }<br>
+            //In fact Mobile is a class(blue print) and samsung below is the instance 
+            object created.<br>
+        </li>
+        <br>
+        <li>
+            Now, we are creating an object instance:<br>
+            var samsung = new Mobile();//'new' is a keyword and Mobile() is a 
+            //constructor<br>
+            //Accessing:<br>
+            samsung.price();
+        </li>
+    </ol>
+    
+    Javascript code starts:<br>
+    <script src = "object_8_constructor.js">
+    </script>
+</body>
+</font>
+</html>

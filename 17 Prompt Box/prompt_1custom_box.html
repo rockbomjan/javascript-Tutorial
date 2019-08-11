@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Prompt Box</title>
+    <link rel = "stylesheet" href = "prompt_1custom_box.css">
+</head>
+    <h1><u>Custom Prompt Box</u></h1>
+<body>
+    <script src = "prompt_1custom_box.js"></script>
+    <div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+<h1 id="status">Text Changes Here.....</h1>
+<!-- ' Prompt.render is the method defined in js file in CustomPrompt() function
+i.e. this.render. The function CustomPrompt() has two parameters(dialog,func)
+related two arguments below. i.e 'Type some text', 'changeText'.
+document.getElementById('dialogboxbody').innerHTML = dialog; statement
+Type some text' is string that appears in the dialog box, changeText is a function. -->
+<button onclick="Prompt.render('Type some text:','changeText')">Change Text</button>
+<button onclick="Prompt.render('Type a color name:','doStuff')">Do stuff</button>
+
+</body>
+</html>

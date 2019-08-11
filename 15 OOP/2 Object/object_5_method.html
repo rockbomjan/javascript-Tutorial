@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object Method</title>
+</head>
+<body>
+    <h1><i><b>Object Method</b></i></h1>
+    <ul>
+        <li>
+            Object members that are functions are called methods. These are accessed
+            with dot operator applied to an object alternative to the dot operator
+            is the array[] operator.<br>
+            <hr>
+            syntax: <br>
+            object_name.Method_name();<br>
+            eg:<br>
+            var fees = {Rahul:100, Summit: 500, total:function(){return(100+200+300);}};<br>
+            The object fees has three members. First two are properties and the last is the
+            method.<br>
+            or<br>
+            var fees = {};//Declaration<br>
+            //now, initialization<br>
+            fees.Rahul = 100;<br>
+            fees.Summit = 500;<br>
+            fees.total = function(){return(100+200+300);};<br>
+            //Accessing the method<br>
+            document.write(fees.total());//or
+            document.write(fees["total"]);<br>
+        </li>
+        <li>
+            <b><i><hr>Adding Properties/Method</i></b><br>
+            Syntax:<br>
+            Object_name.Property_name = value;<br>
+            or<br>
+            Object_name['Property_name'] = value;<br>
+            
+            fees.Sonam = 500;<br>
+            or<br>
+            fees['Sonam'] = 500;<br>
+
+
+        </li>
+
+    </ul>
+    <h2>Javascript codes start</h2>
+    <script src = 'object_5_method.js'>
+    </script>
+</body>
+</html>

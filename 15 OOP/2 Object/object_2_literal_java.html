@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OOP: Object Literal</title>
+    <style>
+        p:not(.test){
+            color:green;
+            font-size: 14px;
+            font-family: Arial Black;
+        }
+        li{
+            color:brown;
+            font-size: 14px;
+            font-family: Arial Black;
+        }
+       
+       a:any-link{
+            color:yellowgreen;
+            text-decoration: none;
+
+        }
+        a:hover{
+            color:pink;
+        }
+        a:active{
+            color: black;
+        }
+        
+        a:visited{
+            color:blueviolet;
+        }
+        
+    </style>
+</head>
+<body bgcolor="#D8D8EC">
+    <h1>OOP: Object Literal</h1>
+    <!--<ul><font face = 'arial' size = 4>-->
+        <li>
+            Declaration and Initialization of objects<br>
+            There two methods to declare and initialize and object.<br>
+            1. Using object literal<br>
+            2. Using object constructor<br>
+            Syntax: var object_name = {};<br>
+            We should follow the naming rules for an object. Reserved keyword
+            are not used.<br>
+            Eg: <br>
+            var fees = {};// var is a keyword, fees name of the object<br/>
+            //It's an empty object as it has no properties or values.<br/>
+            To assign the property to an object:<br>
+            object_name['key'] = value;<br>
+            <br>
+         <p class = "test">fees = ['Rose'] = 100;// a property</p><br>
+            >the other way using dot operator: fees.Rose = 100;<br>
+            <br>
+         <p>fees = ['Summit'] = 200;// a property</p><br>
+            >the other way using dot operator: fees.Summit = 200;<br>
+            <br>
+            fees = ['Rozie'] = 400;// a property<br>
+         <p>>the other way using dot operator: fees.Rozie = 400;</p><br>
+            <br>
+            >Multiword key requires double quotes.<br>
+            eg:<br>
+         <p>fees = ["Rose Tamang"] = 700;// cannot be written with 
+            dot operator because of the space that appears between the
+            key.</p><br>
+            >Using object constructor<br>
+         <p>var fees = new Object();</p>
+            
+            
+        </p>
+    </li>
+        <li>
+            You can assign a function to the value of an object.<br>
+            <p>fees['total'] = function() {return(100+200+400);};//It's a method
+            (anonymous function). <br>
+            docurment.write(fees['total']());</p><br>
+            
+            function sum()<br>
+            {<br>
+                return(100+200+400);<br>
+            }<br>
+
+        <p>fees['total'] = sum;//Here the function used as a value.
+            or fees.total = sum;</p><br>
+       <i><b>Declaration and Initialization: Multi values</b></i><br>
+        syntax: var object_name = {key1:value, key2:value, key3:value};<br>
+        <p>
+        vertically:<br>
+        var object name = {<br>
+            key1:value,<br>
+            key2:value,<br>
+            key3:value,<br>
+            "Supan Lama": value <br>
+        };</p><br>
+        syntax: var object_name = {key1:value1, key2_n:value_n, key3:function};<br>
+        eg:<br>
+        <p>var fees = {Rohan:1200, Suman:1400, total:{function() return(1200+1400);} };</p><br>
+        <!--</font>-->
+    </ul>
+    <h2>Javascript codes start</h2>
+    <p>Click the links below to view the codes in an extra page.</p>
+    <ol>
+        <li><a href= "object_2_literal_java.txt">Object Property</a></li>
+        <li><a href = "object_2_literal_method_java.txt">Object Method</a></li>
+    </ol>
+    <script src = "object_2_literal_java.js">
+    </script>
+    <br>
+    <script src = "object_2_literal_method_java.js">
+        </script>
+</body>
+</html>

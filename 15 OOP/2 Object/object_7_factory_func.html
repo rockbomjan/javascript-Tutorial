@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object: Factory Function</title>
+</head>
+<body><font face = "arial" size = 4>
+    <h1><b>Object: Factory Function</b></h1>
+    <ol>
+        <li>
+            When a function returns an object, we call it a factory function.
+            It can produce object instance without using <i>new</i> 
+            or <i>classes.</i><br>
+            Exampale:<br>
+            function mobile() {<br>
+                return {model:'Galaxy',<br>
+                price: function(){return("Price: Rs 3000");}<br>
+                };<br>
+            }<br>
+            <hr>     
+            //Creating new object instance without using 'new' keyword.<br>
+            //In other words, we have created a class 'mobile' and below 'var samsung 
+            = mobile()' is an object instance;<br>
+            var samsung = mobile();<br>//mobile() is a constructor where the initialization
+            is passed.<br>
+            <hr>
+            //accessing:<br>
+            document.write(samsung.model+" "+samsung.price());<br>
+        </li>
+        <br>
+        <li>
+            Simple object:<br>
+            var samsung = {model:"Galaxy", price: function(){return
+            (Price: Rs 3000");}};<br>
+            //Accessing:<br>
+            document.write(samsung.model+" "+samsung.price());<br>
+            //In this situation, we have to again create properties and methods
+            in case of another object LG<br>
+            Therefore, factory function is the alternative to avoid the construction
+            of properties for each model.<br>
+            var samsung = mobile();
+            var LG = mobile();
+        </li>
+    </ol>
+    
+    Javascript code starts:<br>
+    <script src = "object_7_factory_func.js">
+    </script>
+</body>
+</font>
+</html>

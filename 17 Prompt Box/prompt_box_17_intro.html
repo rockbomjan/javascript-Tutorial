@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prompt Box</title>
+    <link rel = "stylesheet" href = "css_file.css"/>
+</head>
+<body>
+    <h1>Prompt Box</h1>
+    <img src = "images/prompt_box1.jpg"/>
+    <textarea rows = "10" cols = "80" readonly>
+var r = confirm("Want to assign your name?");
+if (r == true){
+    function start(){
+        var name = prompt("What's your name?");  
+        if (name == ''){
+            alert("Please enter your name!");
+            return start();
+        }
+        else if(name == null){
+            alert("Thanks! No worries!");
+        }
+        else if (name != null || name != ''){
+            document.write("Your name is "+name+".");
+        }
+        
+    }
+}
+else{
+    alert("Thanks! No worries!");
+    
+}
+start();
+    </textarea>
+    <div class = "blink"><span>Javascript runs here:</span></div>
+    <p><script src = "prompt_box_17_intro.js"></script></p>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Constructor as a Class</title>
+    <style>
+            img{
+                border:3px solid green;
+            }
+            p{
+                color:darkslateblue;
+            }
+            h3{
+                color:darkmagenta;
+                text-indent: 2em;
+            }
+            </style>
+</head>
+<body bgcolor="#F6CEEC">
+    <font face = 'arial' size = 4>
+    <h1>Constructor as a Class</h1>
+    <ol>
+        <li>
+            Class is defined as a specific category in JavaScript.<br/>
+            Example:<br/>
+            <img src = "class.jpg" height="400" width="700">
+        </li>
+        <li>
+            Here, Mobile is a class and its objects are Samsung, LG and Nokia
+            accessing the property and method in the Mobile class. The properties
+            are Model, Ram, Color, Price and the method is Calling.
+        </li>
+        <li>
+            Here, Person is a class and its objects are Rahul, Sonam and Sujit
+            accessing the property and method in the Person class. The properties
+            are Name, Address, Mobile, Email and the method is Eating.
+        </li>
+        <li>
+            However, in JavaScript the class Mobile is identified as an object and 
+            the other objects are its objects.
+        </li>
+        <li>
+            We define class in JavaScript using custom Constructor. JavaScript
+            has no keyword Class like in other programming language. <i>But in ES6
+            Javascript, the key word class is introduced for the convenience of
+            the programmer.</i><br/><br/>
+            <img src = "es6 class.jpg" height = 300 width = 500><br>
+            <h2>Defining a class in JavaScript</h2>
+            example:<br/>
+            var Mobile = function(model_no, sprice)<br/>
+            {<br/>
+        <p>
+                this.model = model_no;<br/>
+                this.color = 'white';<br/>
+                this.price = 3000;<br/>
+                this.sp = sprice;//this keyword refers to an object constructed<br/>
+                this.price = function()<br/>
+                {<br/>
+                    return(this.price +sprice);<br/>
+                };<br/>
+            }<br/>
+            var samsung = new Mobile('Galaxy', 2000);<br/>
+            samsung is an object.<br>
+        </p>
+        </li>
+    </ol>
+    <h3>JavaScript code starts</h3>
+    </font>
+    <ul>
+        <li>
+    <script src = "object_12_class_construction.js">
+    </script>
+    </li>
+    </ul>
+</body>
+</html>

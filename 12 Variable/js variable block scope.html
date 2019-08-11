@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variable Block Scope</title>
+</head>
+<h1>Variable Block Scope</h1>
+<body>
+    <ul>
+        <li>
+          <font face = "arial" color = "#33CC33"> 1. Block is not a function block. Varible inside the if block has the global scope when declared with var keyword.</font>
+        </li>
+    </ul>
+    1. eg:<br>
+    if(true)<br>
+    {<br>
+        var i = 20;<br>
+        document.write(i);<br>
+    }<br>
+    document.write(i) //Here we can access the variable from outside the scope.<br>
+    <ul>
+            <li>
+                <font face = "arial" color = "#0033ff"> 2. Block is not a function block. Varible inside the if block has the local scope when declared with let keyword.</font>
+            </li>
+        </ul>
+        2. eg:<br>
+        if(true)<br>
+        {<br>
+            let i = 20; //Now the variable scope is local<br>
+            document.write(i);<br>
+        }<br>
+        document.write(i) //Here we cannot access the variable from outside the scope.<br>
+
+    <script src = "variable_block_scope.js">
+    </script>
+    
+</body>
+</html>

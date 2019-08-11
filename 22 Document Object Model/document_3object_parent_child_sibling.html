@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object Model: Parent Child and Sibling Elements</title>
+    <link rel = "stylesheet" href = "css_file.css"/> 
+    <!-- href = hypertext reference -->
+</head>
+<body>
+    <h1>Document Object Model: Accessing Parent Child and Sibling Elements</h1>
+    
+        <p id = "demo">Rose PC1</p>
+        <p class = 'welcome'>Rose PC2</p>
+        <p class = 'welcome'>Rose PC3</p>
+    <br>
+    <ul><li>like</li>
+        <li>share</li>
+        <li>subscribe</li></ul>
+    <!-- javascript counts the spaces too -->
+    <h1>Javasript Code</h1>
+    <textarea rows = "10" cols = "50" readonly>
+            // 1. Accessing children of a node(body)
+            var child = document.body.children;
+            console.log(child);
+            
+            //2. add a new child in the body using DOM method.
+            var para = document.createElement("p");
+            var textNode = document.createTextNode("This paragraph was created using DOM method");
+            para.appendChild(textNode);
+            console.log(para);
+            
+            // Displaying the paragraph in the body.
+            document.body.appendChild(para);
+            
+            //3. Accessing first child and last child
+            var list = document.querySelector('ul');
+            console.log(list);
+
+            //Accessing first child of ul
+            console.log(list.firstChild);
+            
+            //Accessing last child of ul
+            console.log(list.lastChild);
+
+            var first_sibling = demo.nextElementSibling;// first p's id="demo"
+            var first_sibling = demo.nextElementSibling.nextElementSibling;
+            //for next sibling 
+            console.log(first_sibling);
+
+            //finding a parent of ul
+            console.log(list.parentNode);
+
+    </textarea>
+    <p>1. Parent, Child, Siblings</p>
+   <img src = "images/p_c_s1.jpg"/>
+   <p>2. A new paragraph created using DOM method.</p>
+   <img src = "images/p_c_s2.jpg"/>
+   <p>3. Accessing First Child of body</p>
+   <img src = "images/p_c_s3.jpg"/>
+   <p>4. Accessing First child of ul</p>
+   <img src = "images/p_c_s4.jpg"/>
+   <p>5. Accessing last child of ul</p>
+   <img src = "images/p_c_s5.jpg"/>
+   <p>5. Accessing first sibling of p</p>
+   <img src = "images/p_c_s6.jpg"/>
+   <p>6. Finding a parent of ul</p>
+   <img src = "images/p_c_s7.jpg"/>
+<div class = "blink"><span class = "text1">Javascript runs here:</span></div>
+<script src = "document_3object_parent_child_sibling.js"></script>
+</body>
+</html>

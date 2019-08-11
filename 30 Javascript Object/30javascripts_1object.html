@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Objects</title>
+    <link rel = "stylesheet" href = "css_file.css">
+</head>
+<body>
+    <h1>Javascript Objects</h1>
+    <ol>
+        <li>Object is in curly({}) braces but an array is in square([]) brackets</li>
+    </ol>
+    <img src = "images/js_object.jpg"><br></br>
+    <textarea class = 'hangingindent' rows = "10" cols = "100" readonly>
+        //Creating an object
+        var person = {
+        first_name: "Rose",
+        last_name: "Tamang",
+        age: 90,
+        profession: "webdeveloper"
+        }
+        
+        document.getElementById('demo1').innerHTML = "1. First Name: "+person.first_name;
+        document.getElementById('demo2').innerHTML = "2. Last Name: "+person.last_name;
+        document.getElementById('demo3').innerHTML = "3. Age: "+person.age;
+        document.getElementById('demo4').innerHTML = "4. Profession: "+person.profession;
+        console.log(person);
+        //Changing the property name value
+        person.profession = "Youtuber";
+        document.getElementById('demo5').innerHTML = "5. (property value changed) Profession: "+person.profession;
+        console.log(person);
+        //Adding a new property name
+        person.interest = "Music, Karate, Computer Programming, WebDevelopment, PC/Mobile Gaming"
+        document.getElementById('demo6').innerHTML = "7. (adding new property) Hobby: "+person.interest;
+        console.log(person);
+        //Delete property name
+        delete person.interest
+        console.log(person)
+
+    </textarea>
+    <p>The object is created.</p>
+    <img src = "images/js_object2.jpg">
+    <P>New property name 'interest' and new property 'youtuber' added.</P>
+    <img src = "images/js_object3.jpg">
+    <p>Property name 'interest' deleted</p>
+    <img src = "images/js_object4.jpg">
+    <div class = 'blink'><span class = '/text'>Javascript codes run here:</span></div>
+    <p id = 'demo1'></p>
+    <p id = 'demo2'></p>
+    <p id = 'demo3'></p>
+    <p id = 'demo4'></p>
+    <p id = 'demo5'></p>
+    <p id = 'demo6'></p>
+    <script src = "30javascripts_1object.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function Expression</title>
+</head>
+<body>
+    <h1>Function Expression</h1>
+    <ul>
+        <li>
+            When we create a function assign it to a variable, known as function expression.The block of 
+            function expression is closed with a semi-colon(;)<br>
+            eg:<br>
+            var  my_func = function show()<br>
+            {<br>
+                document.write("Rose Tamang");<br>
+            };<br>
+            my_func();<br>
+        </li>
+        <li>
+            Note:We cannot call function expression before defining a function.<br>
+            my_func();//calling fucntion expression before hand is a wrong idea.
+            Because function expressions in Javascript are not hoisted, unlike function declaration.<br>
+            var my_func()<br>
+            {<br>
+                document.write("Rose Tamang");<br>
+            };<br>
+        </li>
+    </ul>
+    <script src = "function_8expression.js">
+    </script>
+    
+</body>
+</html>

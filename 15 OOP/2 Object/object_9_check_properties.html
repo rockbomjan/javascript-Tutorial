@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check Properties</title>
+</head>
+<body>
+    <h1><u><i><b>Check Properties</b></i></u></h1>
+    <font face = 'arial' size = 4>
+    <ul>
+        <li>
+             1. using typeof operator to check if a property exists or not:<br>
+             syntax:<br>
+             if(typeof.object_name.key !== 'undefined');//!==: not equal to<br>
+             eg:<br> 
+                if(typeof.Nokia.memory !== 'undefined')<br>
+                {<br>
+                    document.write("Available");<br>
+                }<br>
+                else<br>
+                {
+                    document.write("Doesn't exst.");
+                }
+                    
+
+             A property becomes 'undefined' when we do not use the porperty.<br>
+             If a proprety is not 'undefined', means it has a value and it used
+             somewhere in the program and it exists.<br>
+        </li>
+        <hr>
+        <li>
+            2. using in operator<br>
+            syntax:<br>
+             if('key' in object_name)<br>
+             eg:<br> 
+                if('memory' in Nokia)<br>
+                {<br>
+                    document.write("Available");<br>
+                }<br>
+                else<br>
+                {<br>
+                    document.write("Doesn't Exist);<br>
+                }<br>
+                
+        </li>
+        <hr>
+        <li>
+            3. hasOwnProperty()//It's a method.<br>
+            syntax:<br>
+            if(object_name.hasOwnPropety('key'))<br>
+            eg:<br>
+            if(nokia.hasOwnProperty('color'))<br>
+            {<br>
+                document.write("Available");<br>
+            }<br>
+            else<br>
+            {<br>
+                document.write("Doesn't Exist);<br>
+            }<br>
+        
+
+        </li>
+        <hr>
+        <li>
+            Javascript code starts:<br>        
+        </li>
+        </ul>
+</font>
+<script src = "object_9_check_properties.js">
+</script>
+
+</body>
+</html>

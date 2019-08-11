@@ -1,0 +1,19 @@
+var Mobile = function(model_no, sprice)
+{
+    this.model = model_no;
+    this.color = 'white';
+    this.price = 3000;
+    this.sp = sprice;
+    this.sellingprice = function()
+    {
+        return(this.price + this.sp);
+    };
+    this.data = function()
+    {
+        document.write('Model No: '+this.model+' Price: '+this.sellingprice());
+    };
+}
+
+var samsung = new Mobile('Galaxy', 2000);
+var nokia = new Mobile('3310', 1000);
+nokia.data();

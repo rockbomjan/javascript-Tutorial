@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Private Properties and Methods</title>
+</head>
+<body>
+    <h1>Private Properties and Methods</h1>
+    <ol>
+        <li>
+            Using keywords(var or let or const), you can create private properties
+            and methods.<br/>
+            Example:<br/>
+            this.price //It's public.<br/>
+            var price //It's private.<br/>
+            let price //It's private.<br/>
+        </li>
+        <li>Example:<br/>
+            i) In the following example var price = 300 is private. Therefore,
+            it cannot be accessed from outside the scope.<br/>
+            ii) var data = function() is a private method.<br/>
+                var Mobile = function(model_no, sprice)<br/>
+                {<br/>
+                    this.model = model_no;<br/>
+                    this.color = 'white';<br/>
+                    var price = 3000;<br/>
+                    this.sp = sprice;<br/>
+                    this.sellingprice = function()<br/>
+                    {<br/>
+                        return(this.price + this.sp);<br/>
+                    };<br/>
+                    var data = function()<br/>
+                    {<br/>
+                        document.write('Model No: '+this.model+' Price: '+this.sellingprice());<br/>
+                    };<br/>
+                }<br/>
+                
+                var samsung = new Mobile('Galaxy', 2000);<br/>
+                var nokia = new Mobile('3310', 1000);<br/>
+                nokia.data();<br/>
+        </li>
+    </ol>
+</body>
+</html>

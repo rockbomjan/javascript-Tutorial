@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eval Function</title>
+    <link rel = "stylesheet" href = "css_file.css">
+</head>
+<body>
+    <h1>Eval Function</h1>
+    <img src = "images/eval1_func.jpg">
+    <ol>
+        <li>
+                eval() function is not used widely as it is considered malicious.
+        </li>
+        <li>
+                The reason eval is generally considered dangerous is because it is 
+                very easy for untrusted code to sneak in. ... An attacker could create 
+                a specially crafted form that posts to your form with the same cookie-
+                stealing code.
+        </li>
+    </ol>
+    <textarea rows = "10" cols = "90" readonly>
+            History and uses of eval()
+            Eval has existed since the first ECMA specification published in June 1997. 
+            It is specified by the following on page 32 of the spec:
+            Eval code is the source text supplied to the built-in eval function. More 
+            precisely, if the parameter to the built-in eval function is a string, it is 
+            treated as an ECMAScript Program. The eval code for a particular invocation 
+            of eval is the global code portion of the string parameter. — ECMA 262, 1st 
+            Edition, June 1997
+            Eval() is an instance of a meta-circular evaluator, or a language interpreter 
+            that can be used within itself. Many other programming languages contain an 
+            eval-like function, including Ruby, Python, and Perl.
+            While often misused, it can be useful for allowing generated code to run at 
+            a given point. While under controlled conditions, this is not a major issue, 
+            the general consensus amongst the Javascript community is that you should 
+            rarely if ever use it. Here’s a list of applications in which you must use 
+            eval():
+            1. Running code remotely sent from a server
+            2. Evaluating user input code**
+            3. Running dynamically generated code
+            4. Running a script and storing its result
+            While applications 1,3, and 4 are generally safe, there are real security 
+            concerns to our second application — evaluating user input code.
+    </textarea>
+    <div class = 'blink'><span class = '/text'>Javascript Runs here:</span></div>
+    <p id = 'demo'></p>
+    <p id = 'emo'></p>
+    <script src = "eval_function_1intro.js"></script>
+</body>
+</html>

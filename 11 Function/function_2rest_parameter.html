@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function Rest Parameter</title>
+    <link rel = "stylesheet" href = "css_file.css"/>
+</head>
+<body>
+    <h1>Rest parameter.</h1>
+    Difference between parameter and argument:<br>
+    A variable of a function in a method is a parameter. An argument is the value assigned to the variable(parameter)
+    in a function.<br>
+    The rest parameter allows to represent an indefinite number of arguments
+    as an array.<br>
+    Rest arguments start with three dots.(...). The rest operator
+    must be the last parameter to a function.<br>
+    Syntax:<br>
+    function function_name(...args)<br>
+    {<br>
+        Block of statements;<br>
+    }<br>
+    or<br>
+    Syntax:<br>
+    function function_name(a,...args)<br>
+    {<br>
+        Block of statements;<br>
+    }<br>
+    <script src = "function_2_a_rest_parameter.js">
+    </script>
+ <h2>Difference between rest parameters and arguments object.</h2>  
+ There are three main differences between rest parameters and arguments object.<br>
+ <ul>
+    <li>Rest parameters are only the ones that haven't been given separate name,
+    <li>The arguments object is not a real array, while Rest Parameters arre
+        array instances, meaning methods like sort, map, forEach or pop can
+        be applied on it directly. while the arguments object contains all arguments passed to the function.</li>        
+    <li>The arguments object has additional functionality specific to itself(like
+        the callee property. 
+    </li>
+ </ul>
+ <script src = "function_2_b_rest_parameter.js">
+ </script>
+ <a href = "rest_argu.jpg">
+  <img class = "thumb" src = "rest_argu.jpg" alt = "res_argu">
+  <img class = "thumbbig" src = "rest_argu.jpg" alt = "res_argu">
+</a>
+ <br>
+ <ul>
+ <li>A value is assigned to 'a' separately and the rest of them is assigned to rest parameters.</li>
+ <li>A value is assigned to 'a' as well as the arguments object takes all the value including that of 'a'.</li>
+ </ul>
+ <br>
+ <a href = "rest_argu1.jpg">
+ <img class = "thumb" src = "rest_argu1.jpg" alt = "res_argu1">
+ <img class = "thumbbig" src = "rest_argu1.jpg" alt = "res_argu1">
+ </a>
+ 
+</body>
+</html>

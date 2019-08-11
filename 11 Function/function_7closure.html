@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Closure Function</title>
+</head>
+<body>
+    <h1>Closure Function</h1>
+    <ol>
+        <li>
+            Closure is a function having access to the parent scope. It preserves the 
+            data from outside.<br>
+            var i = 10; // parent scope <br>
+            function show()<br>
+            {<br>
+                var j = 20;<br>
+                document.write(j);<br>
+                document.write(i); //Can access the parent scope(outside)<br>
+                // Here closure is created between the two scope;<br>
+            }<br>
+            show();<br>
+        </li>
+        <li>
+            Closure is an inner function that has access to outer (enclosing) function's
+            variables.
+        </li>
+        <li>
+            Every closure has three scopes.<br>
+            a. Local Scope (Own Scope)<br>
+            b. Outer Function's Scope<br>
+                i) The function inside the function is an inner function and the 
+                function which is outside is the outer function. The inner function
+                can access the variable of outer function. The closure function
+                is also called nested function.<br>
+            c. Global Scope<br>
+        </li>
+    </ol>
+    <script src = "function_7closure.js">
+    </script>
+    
+</body>
+</html>

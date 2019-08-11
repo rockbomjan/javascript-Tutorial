@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creating object: Summary</title>
+    <style>
+        li 
+        {
+            color:#3667F3;
+            font-size: 16px;
+            font-family:Georgia, 'Times New Roman', Times, serif 
+            
+        }
+        h2
+        {
+            color:#F39D36;
+            font-size: 14px;
+            font-family:'Times New Roman', Times, serif         
+        }
+        h1
+        {
+            color:#D513F4;
+          
+        }
+
+    </style>
+</head>
+<body bgcolor="#C7E4FB">
+    <h1>Creating Object: Summary</h1>
+    <ul>
+    <b><li>
+        <hr>
+        1. Using object literal:creates only one object.<br>
+        var fees = {};//Declaration<br/>
+        fees['Rahul']=200;//Initialization<br/>
+    </li>
+    <li>    
+    2. Object literal declare and initialize:creates only one object.<br/>
+        var fees = {Rahul:100};<br/>
+    </li>
+    <li>
+        3. Object Constructor:creates only one object.<br/>
+        var fees = newObject();<br/>
+    </li>
+    <li>
+        4. Factory Function: Creating object from an object<br/>
+        function mobile()//mobile is an object<br/>
+        {<br/>
+            return<br/>
+            {<br/>
+             model:'Galaxy';   <br/>
+            }<br/>
+        }<br/>
+        var samsung = mobile()//samsung is an object<br/>
+        var lg = mobile()//lg is an object<br/>
+        Both the object can access the same property.<br/>
+    </li>
+    <li>
+        <h2>Constructor Function: A Class</h2>
+        Constructor Function:This constructor function is called a class
+        in javascript.<br/>
+        example<br/>
+        i)<br/>
+        function Mobile()<br/>
+        {<br/>
+            this.model = 'Galaxy';<br/>
+        }<br/>
+        var samsung = new Mobile();<br/>
+        var nokia = new Mobile();<br/>
+        **********************************************************************************<br/>
+        ii)<br/>
+        var Mobile = Mobile()<br/>// object constructor is assigned to the 
+        var Mobile object.<br/>
+        {<br/>
+            this.model = 'Galaxy';<br/>
+        }<br/>
+        var samsung = new Mobile();<br/>
+        var nokia = new Mobile();<br/>
+        
+    </li>
+   
+</b>
+</ul>
+</body>
+</html>

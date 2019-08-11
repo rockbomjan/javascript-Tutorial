@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype in JavaScript</title>
+    <style>
+            img{
+                border:3px solid green;
+            }
+    </style>
+</head>
+<body>
+    <font size = 5>
+    <h1>Prototype in JavaScript</h1>
+    <script src = "1prototype_javascript.js">
+    </script>
+    <p>The console details are as follows.</p>
+    <img src = "console1.jpg"/><br/>
+    
+    <p>The console details for nokia do not have the color property.</p>
+    <img src = "console2.jpg"/><br/>
+    <p>The JavaScript codes are in the picture below. The property created
+        outside the scope is available only for the object it was built
+        for and not for the other object like nokia. In the above console
+        picture, you can see that nokia has no access to that color property.
+        In order to defined the property for nokia then extra property has 
+        to be built.
+        In this way we have to create thousands of color property for other
+        objects.<br/>
+        However, here comes the concept of prototype to overcome this
+        complication.<br/>
+        The syntax is:<br/>
+        class_name.prototype.key = 'value';
+
+    </p>
+    <img src = "codes1.jpg"/><br/>
+    <p>Creating prototype: Now, the object</p>
+    <img src = "codes2.jpg"/><br/>
+    <p>The console log: In the console log the property color is 
+        visible under _proto_ category.<br/>
+    </p>
+    <img src = "console3.jpg"/><br/>
+</font>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class Method Overriding</title>
+    <link rel = "stylesheet" href = "cssstyle.css"/>
+</head>
+<body>
+    <h1>Class Method Overriding</h1>
+    <ol>
+        <li>
+                Method Overriding In JavaScript. It is true that JavaScript supports overriding 
+                not overloading. When you define multiple functions which has the same name, 
+                the last one defined will override all the previously defined ones and every 
+                time when you invoke a function, the last defined one will get executed.
+        </li>
+        <br />
+        <!-- This part opens the image to the next tab-->
+<a target = "_blank" href = "method_overriding.jpg">
+        <!-- This part display the image as a thumbnail.-->            
+            <img class = "thumb" src = "method_overriding.jpg" 
+                    alt = "mover" style="width:150px"></a>
+        <li>
+            <textarea rows = "20" cols = "100" readonly>
+                    //Function for inheritance
+                    function extend(Child, Parent)
+                    {
+                        Child.prototype = Object.create(Parent.prototype)
+                        Child.prototype.constructor = Child;
+                    }
+                    
+                    //Super class
+                    var Mobile = fucntion()
+                    {
+                    
+                    }
+                    
+                    //Prototype Member
+                    Mobile.prototype.show = fucntion()
+                    {
+                        return "Super Class Method";l
+                    }
+                    
+                    //Sub class
+                    var Samsung = function()
+                    {
+                    
+                    }
+                    
+                    // Sub class Samsung extending super class Mobile
+                    extend(Samsung, Mobile);
+
+                    //Creating object of sub class Samsung
+                    var sam = new Samsung();
+                    
+                    //Accessing super class property model using sub class object.
+                    document.write(sam.show());
+            </textarea>
+        </li>
+    </ol>
+    <p>Javascript Code runs here:<br></p>
+    <script src = "2class_1Method_Overriding.js">
+        </script>
+</body>
+</html>

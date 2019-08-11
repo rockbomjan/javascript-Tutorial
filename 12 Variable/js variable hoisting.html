@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variable Hoisting</title>
+</head>
+<body>
+    <h1>Variable Hoisting</h1>
+    Hoisting is Javascript's default behaviour of moving declaration to the top of the 
+    function, if defined in a function, or the top of the global context, if defined
+    outside a function.<br>
+    Javascript divides the code var a = 10 in to two parts.<br>
+    var a; Variable declaration: Javascript moves this declaration to the top if 
+    it is inside the function or to the top of the global context if it is outside
+    the function<br>
+    a = 10; Variable initialization.<br>
+    <ul>
+        <li>
+            We write like this:<br>
+            var a = 10;<br>
+            document.write(a);<br>
+            var b = 20;<br>
+        </li>
+        <li>
+            Compile Phase:<br>
+            var a; //The declaration is moved to the top.<br>
+            var b; //The declaration is moved to the top<br>
+            a = 10; //Initialization remains where it was.<br>
+            document.write(a); //Code remains where it was.<br>
+            b = 20; //Initialization remains where it was.<br>
+        </li>
+        <li>
+            <b>Javascript uderstands the following code:</b><br>
+            a = 10;<br>
+            document.write(a);<br>
+            var a;<br>
+            <b>as:</b><br>
+            var a;<br>
+            a = 10;<br>
+            document.write(a);<br>
+            So it makes no difference where you declare the variable. But 
+            initialization follows the precedence.<br>
+        </li>
+        <li>
+            A variable can be used before it has been declared.
+        </li>
+        <li>
+            A variable can be used before it has been declared.
+        </li>
+        <li>
+                eg:<br>         
+        </li>  
+    </ul>
+    <script src ="variable_hoisting.js">
+    </script>
+        
+    
+</body>
+</html>

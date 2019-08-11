@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String Object and Method</title>
+    <link rel = "stylesheet" href = "css_file.css">
+</head>
+<body>
+    <h1>String Object and Method</h1>
+    <img src = "images/string1.jpg"/>
+    <p>1. primitive = built in predefined data type related to values. i.e. 
+            Boolean, Strings, Numbers, int, float, etc.</p>
+    <p>2. non primitive = data type created by a user</p>
+    <p>3. var firstName = new String("Rose"). Here, new String("Rose") is a 
+         string object</p>
+    <p>4. == checks values only.</p>
+    <p>5. === checks values and data types.</p>
+    <textarea rows = '10' cols = '80' readonly>
+        var text1 = "blogger";
+        var text2 = new String("blogger");
+        
+        document.write(text1+"<br>");
+        document.write(text2+"<br>");
+        document.write(text1 == text1);
+        document.write("<br>");
+        document.write(text1 === text2);
+        document.write("<br>");
+        document.write(typeof(text1));
+        document.write("<br>");
+        document.write(typeof(text2));
+        document.write("<br>");
+</textarea>
+<div class = "blink"><span>Javascript runs here:</span></div>
+<p><script src = "string_1object_method.js"></script></p>
+    <h1>Properties and Methods</h1>
+    <img src = "images/prop_methos.jpg"><br>
+    <textarea rows = '10' cols = '80' readonly>
+        //Properties and Method
+var string1 = "Welcome to my channel";
+var string2 = " Please love me.";
+function myfunc1(){
+var a = string1.length;
+/*document.getElementById("demo").innerhtml = string1;//html is in lower case.
+So, it created an error.*/
+document.getElementById("demo1").innerHTML = "Number of characters in: 'Welcome to my channel' is "+a;
+}
+
+function myfunc2(){
+var b = string1.charAt('8');//counts index no
+document.getElementById("demo2").innerHTML = "The character at 8th position is: "+b;
+
+}
+
+function myfunc3(){
+var c = string1.indexOf('m');//the preceding letter in a sentence or the first
+//letter of word is counted for index no even if you pass a string of word
+document.getElementById("demo3").innerHTML = "The index of 'm' is: "+c;
+}
+
+function myfunc4(){
+var d = string1.lastIndexOf('m');//counts the last index of a repeated or non
+//repeated letter
+document.getElementById("demo4").innerHTML = "The last index of 'm' is: "+d;
+}
+
+function myfunc5(){
+var e = string1.replace("my", "Rose's");
+document.getElementById("demo5").innerHTML = string1;
+document.getElementById("demo6").innerHTML = "'my' is replaced: "+e;
+}
+function myfunc6(){
+var f = string1.toUpperCase();
+document.getElementById("demo7").innerHTML = "uppercase: "+f;
+var g = string1.toLowerCase();
+document.getElementById("demo8").innerHTML = "lowercase: "+g;
+}
+
+function myfunc7(){
+var h = string1.concat(string2);
+document.getElementById("demo9").innerHTML = "concat string1 with string2: "+h;
+
+}
+</textarea>
+    <script src = "string_2object_method.js"></script>
+    <input type = "button" onclick = "javascript: myfunc1();" value = "LENGTH">&nbsp;
+    <div id = "demo1"></div><br>
+    <input type = "button" onclick = "javascript: myfunc2();" value = "CHARACTER">&nbsp;
+    <div id = "demo2"></div><br>
+    <input type = "button" onclick = "javascript: myfunc3();" value = "INDEX NO">
+    <div id = "demo3"></div><br>
+    <input type = "button" onclick = "javascript: myfunc4();" value = "LAST INDEX NO">
+    <div id = "demo4"></div><br>
+    <input type = "button" onclick = "javascript: myfunc5();" value = "REPLACE">
+    <div id = "demo5"></div><br>
+    <div id = "demo6"></div><br>
+    <input type = "button" onclick = "javascript: myfunc6();" value = "CASE">
+    <div id = "demo7"></div><br>
+    <div id = "demo8"></div><br>
+    <input type = "button" onclick = "javascript: myfunc7();" value = "CONCAT">
+    <div id = "demo9"></div><br>
+    
+   
+    
+</body>
+</html>

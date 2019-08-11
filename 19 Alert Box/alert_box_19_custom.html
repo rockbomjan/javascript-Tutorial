@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Confirm Box</title>
+    <link rel = "stylesheet" href = "alert_box_19_custom.css"/>
+</head>
+<body>
+    <script src = "alert_box_19_custom.js"></script>
+    <h1>Custom Confirm Box</h1>
+    <div id="dialogoverlay"></div>
+    <div id="dialogbox">
+        <div><!-- child div -->
+            <div id="dialogboxhead"></div><!-- child div -->
+            <div id="dialogboxbody"></div><!-- child div -->
+            <div id="dialogboxfoot"></div><!-- child div -->
+        </div>
+    </div>
+    <input type = "button" onclick = "alert('This the default alert box msg.')" 
+    name = "" value = "Default Alert">
+    <input type = "button" onclick = "Alert.render('This the custom alert box msg.')" 
+    name = "" value = "Custom Alert"><!-- The 'Alert' variable is in js code. -->
+    
+</body>
+</html>

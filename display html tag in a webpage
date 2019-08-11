@@ -1,0 +1,22 @@
+html code:
+<pre>
+&lt;div class="html"&gt;
+    &lt;html&gt;
+    &lt;head&gt;&lt;title&gt;Title&lt;/title&gt;&lt;/head&gt;
+    &lt;body&gt;
+    &lt;p&gt;Unrendred html&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+&lt;/div&gt;
+</pre>
+
+Display:
+<div class="html"> 
+    <html> 
+    <head>
+<title>Title</title>
+</head> 
+    <body>
+    <p>Unrendred html</p>     </body> 
+    </html> 
+</div>

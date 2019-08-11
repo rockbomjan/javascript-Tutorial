@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript: Scope Chain</title>
+    <link rel = "stylesheet" href = "css_file.css">
+</head>
+<body>
+    <h1>Javascript: Scope Chain</h1>
+    <img src = "images/function_scope_chain.jpg"><br></br>
+    
+    <iframe src= "scope_chain.txt" scrolling='yes' frameborder='5px' width = "950"
+    height = "200" name = "font_size" ></iframe>
+  <br></br>
+    <textarea rows = "10" cols = "95" readonly>
+    onload = function(){
+    document.font_size.document.body.style.fontSize = "15pt";
+        }
+            
+    var x = 12;//global variable
+    var y1 = "Welcome to my channel!!";//global variable
+    console.log(x);
+    f1();
+            
+    function f1(){
+        var localvarf1 = 'Subscribe to my channel.';//local variable
+        var y2 = 'This a local variable y2 inside f1()';//local variable
+        console.log(x);
+            f2();
+            function f2(){
+            var localvarf1 = 'This is a local variable as same as in f1() but the texts are different.';//local variable
+            var y3 = 'This a local variable y3 inside f2()';//local variable
+            console.log(x);/*The scope chain jumps to global variable value. As per the execution
+            context, the value will be searched in the scope of f2() and then in the scope
+            of f1() and then moves to the global variable.*/
+            
+            f3();
+            function f3(){
+            var localvarf1 = 'This is a local variable as same as in f1() and f2()';
+            var y4 = 'This a local variable y4 inside f3()';//local variable
+            //climb up the scope chain
+            console.log(x);
+            console.log(y1);
+            console.log(y2);
+            console.log(y3);
+            console.log(y4);
+            }
+        }   
+    }
+    </textarea>
+    <p>Output of console.log(x)</p>
+    <img src = "images/console_log1.jpg">
+    <p>Output of  console.log(y1); console.log(y2); console.log(y3); console.log(y4);</p>
+    <img src = "images/console_log2.jpg">
+    <p>Console video running debugger in javascript.</p>
+    <video width = "320" height = "240" controls>
+        <source src = "images/debugger.mp4" type = "video/mp4">
+        Your browser doesn't support video tag.
+    </video>
+    <div class = 'blink'><span class = '/text'>Javascript codes runs here:</span></div>
+
+    <script src = "29_scope_1chain.js"></script>
+</body>
+</html>

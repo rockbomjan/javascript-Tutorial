@@ -1,0 +1,31 @@
+/* Full Form of CSS:Cascading Style Sheets*/
+h1,p, legend, body
+{
+    color: palegoldenrod;
+
+}
+
+body
+{
+background-color:black;
+font-size: 1.5em;/*
+“Ems” (em): The “em” is a scalable unit that is used in web 
+document media. An em is equal to the current font-size, for 
+instance, if the font-size of the document is 12pt, 1em is 
+equal to 12pt.*/
+}
+img
+{
+    border: solid green;
+    border-width: 1.5em;
+    width: 600px;
+}
+textarea{
+    font-size: 1em;
+    display: block;/* for center alignment*/
+    margin-left: auto;/* for center alignment*/
+    margin-right: auto;/* for center alignment*/
+    border: solid green;
+    
+}
+/* href stands for Hypertext Reference*/

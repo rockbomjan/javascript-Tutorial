@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object Model with CSS</title>
+    <style>
+
+    </style>
+    <link rel ="stylesheet" href = "css_file.css"/>
+</head>
+<body>
+    
+    <h1 id = 'demo1'>Document Object Model with CSS</h1>
+    <p id = 'demo2'style>Accessing css properties through javascript</p>
+    <img src = "images/js_css1.jpg">
+    <p>Javascript Code:</p>
+    <textarea rows = 10 cols = 60 readonly>
+        //One by one access
+        //Change the font color of h1.
+        document.getElementById('demo').style.color = 'red';
+
+        //all at once access
+        //Using setAttribute() method to change the property of all the elements.
+        document.getElementById('demo2').setAttribute(
+        "style",
+        "color:green; background-color:pink; height: 50px; text-align: center;"
+        );
+    </textarea>
+    <script src = "document_4object_model_css.js" > </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accessing Private Properties and Methods</title>
+    <style>
+    body
+    {
+        font-size: 1.2em;
+    }
+    body>ol
+    {
+    list-style-type: upper-alpha;
+    }
+    
+    li>ol 
+    {
+    list-style-type: lower-alpha;
+    color:maroon;
+    }
+    </style>
+</head>
+<body>
+    <h1>Accessing Private Properties and Methods from outside the scope</h1>
+    <ol>
+        <li>
+            Using keywords(var or let or const), you can create private properties
+            and methods.<br/>
+            Example:<br/>
+            this.price //It's public.<br/>
+            var price //It's private.<br/>
+            let price //It's private.<br/>
+        </li>
+        <li>Example:<br/>
+        <ol>
+            <li> In the following example var price = 300 is private. Therefore,
+            it cannot be accessed from outside the scope.</li>
+            <li> var data = function() is a private method.
+                var Mobile = function(model_no, sprice)</li>
+            <li>If we try to access a private property from outside, the result will be undefined.</li>
+            <li>
+                If we try to access a method from outside, the result in the console
+                will be 'method_name is not a function'
+            </li>
+        </ol>
+        <br>
+        <b>JavaScripts Codes:<br></b>
+        var Mobile = function(model_no, sprice)<br>
+                {<br/>
+                    this.model = model_no;<br/>
+                    this.color = 'white';<br/>
+                    var price = 3000;<br/>
+                    this.sp = sprice;<br/>
+                    this.sellingprice = function()<br/>
+                    {<br/>
+                        return(this.price + this.sp);<br/>
+                    };<br/>
+                    var data = function()<br/>
+                    {<br/>
+                        document.write('Model No: '+this.model+' Price: '+this.sellingprice());<br/>
+                    };<br/>
+                }<br/>
+                
+                var samsung = new Mobile('Galaxy', 2000);<br/>
+                var nokia = new Mobile('3310', 1000);<br/>
+                nokia.data();<br/>
+        </li>
+        <h2>Example of accessing private properties and methods from outside</h2>
+        <li>
+            Examples:
+            <ol>
+                <li>
+                    We have to use a public method in order to access
+                    the private porperty or method.<br>
+                </li>
+                    <li>
+                        In the example below, <b><i>var price = 3000;</i></b> is a 
+                        private property being accessed by the public
+                        method <b><i> this.sellingprice.</i></b>
+                    </li>
+                    <b>JavaScript Codes:<br></b>
+        var Mobile = function(model_no, sprice)<br>
+                {<br/>
+                    this.model = model_no;<br/>
+                    this.color = 'white';<br/>
+                    <b><i>var price = 3000;<br/></i></b>
+                    this.sp = sprice;<br/>
+                    <b><i>this.sellingprice = function()<br/>
+                    {<br/>
+                        return(price);<br/>
+                    };<br/></i></b>
+                    var data = function()<br/>
+                    {<br/>
+                        document.write('Model No: '+this.model+' Price: '+this.sellingprice());<br/>
+                    };<br/>
+                }<br/>
+                
+                var samsung = new Mobile('Galaxy', 2000);<br/>
+                var nokia = new Mobile('3310', 1000);<br/>
+                nokia.data();<br/>
+        
+                
+            </ol>
+        </li>
+    </ol>
+    
+</body>
+</html>
