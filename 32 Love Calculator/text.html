@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Type what you want!!");
+        parseInt(a);
+        document.write(a +" "+" typeof " + typeof(a)+ "<br>");
+        document.write((a) +" "+ " isNaN" + isNaN(a)+"<br>");
+        if(typeof(a)=='number'){
+            document.write(a+" True:typeof<br>");
+        }
+        else if(isNaN(a) == true){
+            document.write(a+" True:isNaN<br>");
+        }
+        else{
+            document.write(a+ " False");
+        }
+
+        
+        </script>
+
+</body>
+</html>

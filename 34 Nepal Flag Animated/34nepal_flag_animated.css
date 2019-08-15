@@ -1,0 +1,31 @@
+.middle_layer{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin: auto;
+    border: 2px solid #000080;
+    position: relative;
+}
+.middle_layer li{
+    border: 1px solid #000080;
+    list-style: none;
+    position: absolute;
+    width: 200px
+    
+}
+li:nth-child(1){
+    top: 47px;
+    transform: rotate(15deg);
+}
+li:nth-child(2){
+    top: 47px;
+    transform: rotate(30deg);
+}
+li:nth-child(3){
+    top: 47px;
+    transform: rotate(45deg);
+}
+li:nth-child(4){
+    top: 47px;
+    transform: rotate(60deg);
+}
