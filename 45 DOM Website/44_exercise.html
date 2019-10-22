@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="44_style.css">
+    <title>DOM Exercise</title>
+  </head>
+  <body>
+    <h1>DOM Exercise</h1><a href="44_dom_website_layout.html">Back</a>
+    <p>Exercise 1</p>
+    <p>You have to create a variable which is a string containing the text which 
+        is a link you are interested in.
+    </p>
+    <p>
+        You have to fetch all the links from a given page which contains a notified
+        text.
+    </p>
+    <P id="demo"></P>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // let text = "facebook";
+
+        let links = "https://www.facebook.com";
+
+        Array.from(links).forEach(function (elements) {
+            console.log(elements)
+
+            // if (String(elements).toLowerCase().indexOf(text) != -1) {
+            //     document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + `${elements} <br>`;
+            // }
+        })
+        
+    </script>
+  </body>
+</html>

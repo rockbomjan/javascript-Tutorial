@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Events and Event Objects</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>DOM Events and Event Objects</h1>
+    <p>We interact with a browser and do something like click on the links in a weppage
+        cut, copy, paste, save, etc, these are all events. Javascript has the capability
+        to capture these events. We can run certain codes after such events occur and
+        make our webpage interactive.
+    </p>
+    <div class="container">
+            <h2 id="heading">Welcome to Rock Bomjan</h2>
+            <div id="myfirst" class="child_red_good child_good red_child">Welcome to my channel</div>
+            <ul class = "this_ul" id = "my_ul">
+            <li class="child">Child 1</li>
+            <li class="child">Child 2</li>
+            <li class="child" id = 'child3'>Child 3</li>
+            <li class="child">Child 4</li>
+            <li class="child" id = 'child5'>Child 5</li>
+        </ul>
+            <form action="none.html" method = "POST">
+                <a href="https://www.youtube.com/user/rockbomjan">Rock Bomjan</a><br>
+                <br>
+                <p>Search: <input type="text" name = "rock"></p><br>
+                <!-- <input type="button" id = 'btn' value = "submit"> -->
+                <!-- <input type="submit" id = 'btn' value = "submit"> -->
+                <button id = 'btn'>Submit Form</button>
+            </form>
+    </div>
+    <div>
+        <h2>Javascript codes</h2>
+        <textarea name="" id="" cols="100" rows="10">
+                console.log('Events and Event Objects');
+                //We can add 'mouseover' event in place of 'click' event
+                document.getElementById('heading').addEventListener('click', function(e){
+                console.log('Clicking "Welcome to Rock Bomjan\'s heading" event is successful.')
+                console.log(e);//prints the events eg: MouseEvent
+                let variable_a;
+                variable_a = e.target;// target is the id = 'heading'
+                console.log(variable_a)//prints the target
+                //or
+                // location.href = '//facebook.com';//leads to facebook login page
+                console.log('cleintX and clientY');
+                variable_a = e.clientX;
+                console.log('clientX: '+ variable_a);
+                variable_a = e.clientY;
+                console.log('clientY: '+ variable_a)
+                
+                })
+                
+                document.getElementById('myfirst').addEventListener('click', function(f){
+                console.log('Clicking "Welcome to my channel" event is successful.')
+                console.log(f);//prints the events eg: MouseEvent
+                let variable_b;
+                variable_b = f.target;// target is the id = 'heading'
+                console.log(variable_b)//prints the target
+                variable_b = f.target.className;
+                console.log(variable_b);//displays the class name
+                variable_b = Array.from(f.target.classList);
+                console.log(variable_b);//displays the array of class list
+                
+                console.log('offsetX and offsetY values:')
+                variable_b = f.offsetX;
+                console.log('offsetX: '+ variable_b);
+                variable_b = f.offsetY;
+                console.log('offsetY: ' + variable_b);
+                })
+
+        </textarea><br><br>
+        <h2>Output of Javascript</h2>
+        <img src="images/DOM1.jpg" alt=""><br><br>
+        <h2>Output of Javascript: offsetX, offsetY, clientX, clientY</h2>
+        <img src="images/DOM2.jpg" alt=""><br><br>
+    </div>
+
+    
+    <script src = "java.js"></script>
+</body>
+</html>

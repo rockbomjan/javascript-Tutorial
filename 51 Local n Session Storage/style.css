@@ -1,0 +1,8 @@
+*{
+    margin: 5px;
+    padding: 5px;
+}
+img{
+    border: solid green;
+    border-width: 1em;
+}

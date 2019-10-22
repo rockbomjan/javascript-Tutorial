@@ -1,0 +1,67 @@
+/* Simple Calculater */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
+}
+.dice{
+    text-align: center;
+    display: inline-block;
+}
+h1{
+    margin: 30px;
+    text-shadow: 5px 5px green;/*shadow: horizontally 5px and vertically 5px*/
+    font-size: 6rem;
+    color:palevioletred;
+}
+h2{
+    margin: 30px;
+    text-shadow: 5px 5px green;/*shadow: horizontally 5px and vertically 5px*/
+    font-size: 4rem;
+    color:black;
+}
+
+p{
+    color: #F1BD1A;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+button{
+    padding: 10px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+}
+
+
+body
+{
+background-color:#3b5999;
+font-size: 1.5em;
+text-align: center;
+background-image: url(images/background_img.png);
+background-repeat: no-repeat;
+background-position: center top;
+background-size: 500px;
+/*
+“Ems” (em): The “em” is a scalable unit that is used in web 
+document media. An em is equal to the current font-size, for 
+instance, if the font-size of the document is 12pt, 1em is 
+equal to 12pt.*/
+}
+img
+{
+    /* border: solid green;
+    border-width: 1em; */
+    margin-left: 30px;
+    width: 75%;
+    height: auto;
+    vertical-align: 1em;
+}
+

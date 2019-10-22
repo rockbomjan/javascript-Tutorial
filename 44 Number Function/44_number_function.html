@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript: Number Function</title>
+</head>
+<body>
+    <h1>Javascript: Number Function</h1>
+    <textarea name="textarea" id="" cols="100" rows="20" readonly>
+            // const num_conv = () =>{
+                //     let x1 = true;
+                //     let x2 = false;
+                //     let x3 = "999";
+                //     let x4 = 8888;
+                //     let x5 = new Date();//Date is calculated in milliseconds
+                //     let x6 = "Rose";
+                //     let result = Number(x1);//built Number function i.e. Number()
+                //     console.log(result);
+                // }
+                
+                const num_conv = () =>{
+                    var x = [true, false, '999', 8888, new Date(), 'Rose']
+                    var i = 0;
+                    
+                    for (i; i<= x.length; i++){
+                        let result = Number(x[i])
+                        console.log(result);
+                    }
+                    
+                }
+
+    </textarea><br>
+    <button onclick = "num_conv()">Convert</button><br>
+    <br><img src="images/Number_func.jpg" alt="">
+    <script src = "44_number_function.js"></script>
+</body>
+</html>

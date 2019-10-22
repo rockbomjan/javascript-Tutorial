@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-left: 50px;
+    background-color: #2b5876;
+}
+img{
+    
+    border: solid green;
+    border-width: 5px;
+    max-width: 100%;
+    height:auto;
+}

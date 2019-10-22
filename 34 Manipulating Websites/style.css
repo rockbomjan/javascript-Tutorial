@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background:  #4e4376;
+    padding-left: 15px;
+}
+h1, h2,p{
+    color:#f7f9f9
+}
+img{
+    border: solid coral;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}

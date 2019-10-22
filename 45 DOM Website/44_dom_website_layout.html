@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="44_style.css">
+    <title>DOM Website Layout</title>
+  </head>
+  <body>
+    <h1>DOM Website Layout</h1>
+    <div class="container">
+        <h2 id="heading">Welcome to our page.</h2>
+        <div class="child green">Child 1</div>
+        <div class="child pink">Child 2</div>
+        <div class="child yellow">Child 3</div>
+        <div class="child blue">Child 4</div>
+        <form action="none.html" method = "POST">
+            <p>Search: <input type="text" id="type" name = "hello"></p>
+            <input type="button" id="button" value = "submit">
+        </form>
+    </div>
+    <h2>document and document.all</h2>
+    <img src="images/DOM1.jpg" alt=""><br>
+    <h2>document.body</h2>
+    <img src="images/DOM2.jpg" alt=""><br>
+    <h1>document.forms</h1>
+    <img src="images/DOM3.jpg" alt=""><br>
+    <h1>document.forms[0]</h1>
+    <img src="images/DOM4.jpg" alt=""><br>
+    <br>
+    <h2>Javascript</h2>   
+    <textarea name="" id="" cols="100" rows="10">
+            let a = document.all
+            Array.from(a).forEach(function(element){//to create an array 
+            //with the help of 'a' and iterate using forEach
+            //Note: the value of a must be document.all method
+            console.log(element);
+            })
+    </textarea><br>
+    <h2>Result: All the available elements</h2>
+    <img src="images/DOM5.jpg" alt=""><br>
+    <h2>Links:</h2>
+    <ol>
+      <li>
+        <a href="44_exercise.html">DOMExercise</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com">facebook</a><br>
+      </li>
+    </ol>
+    <h2>document.links</h2>
+    <img src="images/DOM6.jpg" alt="">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src = "44_dom_website_layout.js"></script>
+  </body>
+</html>
